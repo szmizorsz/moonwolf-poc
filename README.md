@@ -6,10 +6,10 @@ I used the Openzeppelin upgradable contracts libary with the following contracts
 - Pausable: critical functions can be paused by the admin
 
 There is only a few functions at the moment:
-- Mint new tokens with a given amount (fractions for the generated token)
-- set a URI for a token
-- get the URI of a token
-- pause the contract
+- mint: mint new tokens with a given amount (fractions for the generated token)
+- setTokenUri: set a URI (ipfs cid in our case) for a token
+- tokenUri: get the URI of a token
+- pause: pause the contract's write functions: mint, setTokenUri
 
 More about upgradable contracts:
 [https://docs.openzeppelin.com/upgrades-plugins/1.x/](https://docs.openzeppelin.com/upgrades-plugins/1.x/)
@@ -29,8 +29,6 @@ I created the following unit tests:
         - The test also prints a URL to the console: where the file could be downloaded from with a public IPFS gateway
 - Test the unavalability of the mint function when the contract is paused        
 
-In the project directory, you can run:
-
 ## Matic mumbai deployment
 
 I deployed the contract to the Matic Mumbai testnet.
@@ -38,15 +36,21 @@ The deployment output with the contact addresses is available in the following f
 matic_mumbai_deployment
 
 You can interact with the contract through truffle if matic is present in the truffle-config.js:
+
 truffle console --network matic
 
 Because it is an upgradable contract you have to interact with the proxy contract (AdminUpgradeabilityProxy) instead of the real contract:
+
 let moonwolfProxy = await MoonwolfPoc.at('0x5c7A3BDec2B9FE55462a9C7EafAe1CfAf6fE31A3')
 
 You can mint a new token:
+
 let result = await moonwolfProxy.mint(50);
 
 You can verify the result, for example there is 'TransferSingle' event in the logs:
+
 result.logs[0].args
+
 It can show you the minted token id:
+
 result.logs[0].args.id.toNumber()
