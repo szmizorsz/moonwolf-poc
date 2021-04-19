@@ -1,0 +1,95 @@
+Starting migrations...
+======================
+> Network name:    'matic'
+> Network id:      80001
+> Block gas limit: 20000000 (0x1312d00)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xac5ee7581c3f32049c9f6422ef227165ff8140cc888e0e2dc1dc4a3cfce17105
+   > Blocks: 1            Seconds: 4
+   > contract address:    0xB3F57d01299C5422542Ab338f6D5AA6D24eFa694
+   > block number:        12887488
+   > block timestamp:     1618822133
+   > account:             0x0f5b2FD00d4A2Bc6F0Fb01d375Bb089d2cA8631d
+   > balance:             0.495114
+   > gas used:            244300 (0x3ba4c)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.004886 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 2 (block: 12887491)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:            0.004886 ETH
+
+
+2_moonwolf_poc_migration.js
+===========================
+
+   Deploying 'MoonwolfPoc'
+   -----------------------
+   > transaction hash:    0xc64f28ef19f47576befea4fa9d0660e5a66f83f5d8e3742444fbcdece4a3c239
+   > Blocks: 2            Seconds: 4
+   > contract address:    0x6f422772341b70275Cacf442240702E29D0D151C
+   > block number:        12887499
+   > block timestamp:     1618822155
+   > account:             0x0f5b2FD00d4A2Bc6F0Fb01d375Bb089d2cA8631d
+   > balance:             0.42915714
+   > gas used:            3255330 (0x31ac22)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0651066 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 2 (block: 12887502)
+
+   Deploying 'ProxyAdmin'
+   ----------------------
+   > transaction hash:    0x95ba2cd3014987e1247e19c00423b7d096c6097dab5f860d00e62b535b37d968
+   > Blocks: 2            Seconds: 4
+   > contract address:    0x64B0dF8CBDA97Af0D9E67d0679B4E5653f43b0BA
+   > block number:        12887507
+   > block timestamp:     1618822171
+   > account:             0x0f5b2FD00d4A2Bc6F0Fb01d375Bb089d2cA8631d
+   > balance:             0.41824268
+   > gas used:            545723 (0x853bb)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01091446 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 2 (block: 12887510)
+
+   Deploying 'AdminUpgradeabilityProxy'
+   ------------------------------------
+   > transaction hash:    0xbcf132c0f69922f62555d718d11d022330a12fc595f24644186f71465c8eb292
+   > Blocks: 2            Seconds: 4
+   > contract address:    0x5c7A3BDec2B9FE55462a9C7EafAe1CfAf6fE31A3
+   > block number:        12887514
+   > block timestamp:     1618822185
+   > account:             0x0f5b2FD00d4A2Bc6F0Fb01d375Bb089d2cA8631d
+   > balance:             0.4079938
+   > gas used:            512444 (0x7d1bc)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01024888 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 2 (block: 12887517)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.08626994 ETH
