@@ -31,33 +31,19 @@ contract("Moonwolf Poc", async function (accounts) {
         assert(ownerBalance.toNumber() === amount);
         // upload a metadata json to IPFS
         const metaDataJson = {
-            "title": "Token Metadata",
-            "type": "object",
+            "name": "Red hat satellite robo",
+            "description": "It can detect signals from the universe.",
+            "image": "https://robohash.org/1",
             "properties": {
-                "name": {
-                    "type": "string",
-                    "description": "Red hat satellite robo"
+                "color": "red",
+                "serial_number": {
+                    "name": "Serial number",
+                    "value": "1.2",
+                    "display_value": "Version number 1.2"
                 },
-                "description": {
-                    "type": "string",
-                    "description": "t can detect signals from the universe."
-                },
-                "image": {
-                    "type": "string",
-                    "description": "https://robohash.org/1"
-                },
-                "properties": {
-                    "type": "object",
-                    "properties": {
-                        "color": {
-                            "type": "string",
-                            "description": "red"
-                        },
-                        "superPower": {
-                            "type": "number",
-                            "value": 5
-                        }
-                    }
+                "previous_versions": {
+                    "name": "Previous versions",
+                    "value": [1.0, 1.1, 1.2]
                 }
             }
         }
