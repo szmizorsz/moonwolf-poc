@@ -1,0 +1,65 @@
+Starting migrations...
+======================
+> Network name:    'matic'
+> Network id:      80001
+> Block gas limit: 20000000 (0x1312d00)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x5da9be5e5ab0a629e82e4f640acf5bbab56dbee46c884ab662ffb09a2eac5f5e
+   > Blocks: 3            Seconds: 5
+   > contract address:    0xfAF7fD7267d345a97e05090673175a168CC5c39b
+   > block number:        13077705
+   > block timestamp:     1619264375
+   > account:             0x0f5b2FD00d4A2Bc6F0Fb01d375Bb089d2cA8631d
+   > balance:             0.39995586
+   > gas used:            244300 (0x3ba4c)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.004886 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 2 (block: 13077708)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:            0.004886 ETH
+
+
+2_moonwolf_nft_migration.js
+===========================
+
+   Deploying 'MoonwolfNFT'
+   -----------------------
+   > transaction hash:    0x563200a54049793b6a67f075f628f62c1b9d836af958c19d19d3e787c13be8f7
+   > Blocks: 2            Seconds: 4
+   > contract address:    0x2FEB61e614b2f13c251C814446626f6c3e18e312
+   > block number:        13077718
+   > block timestamp:     1619264401
+   > account:             0x0f5b2FD00d4A2Bc6F0Fb01d375Bb089d2cA8631d
+   > balance:             0.33094738
+   > gas used:            3407911 (0x340027)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.06815822 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 3 (block: 13077722)
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.06815822 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.07304422 ETH
