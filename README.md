@@ -49,7 +49,9 @@ let moonwolfNFT = await MoonwolfNFT.at('0x2FEB61e614b2f13c251C814446626f6c3e18e3
 You can mint a new token:
 
 let tokenOwner = accounts[1]
+
 let cid = "https://gateway.ipfs.io/ipfs/QmR98CHh6keViVwTbjUnzq8BkXb5B5XsngAAuj7dDjj3Fp"
+
 let result = await moonwolfNFT.mint(tokenOwner, cid);
 
 You can verify the result, for example there is 'Transfer' event in the logs:
